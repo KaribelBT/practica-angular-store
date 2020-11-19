@@ -2,13 +2,36 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product.component';
+import { CartComponent } from './cart/cart.component';
+import { ProductsComponent } from './products/products.component';
+import { ContactComponent } from './contact/contact.component';
+import { DemoComponent } from './demo/demo.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { BannerComponent } from './banner/banner.component';
+
+import { ExponentialPipe } from './exponential.pipe';
+import { HighlightDirective } from './highlight.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent
+    HomeComponent,
+    HeaderComponent,
+    ProductComponent,
+    CartComponent,
+    ProductsComponent,
+    ContactComponent,
+    DemoComponent,
+    PageNotFoundComponent,
+    BannerComponent,
+    ExponentialPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
