@@ -9,17 +9,12 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LayoutComponent } from './layout/layout.component';
 
-import { ExponentialPipe } from './exponential.pipe';
-import { HighlightDirective } from './highlight.directive';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    ExponentialPipe,
-    HighlightDirective,
     LayoutComponent,
     FooterComponent
   ],
