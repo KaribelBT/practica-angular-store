@@ -16,6 +16,7 @@ import { BannerComponent } from './banner/banner.component';
 
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { HighlightDirective } from './highlight.directive';
     PageNotFoundComponent,
     BannerComponent,
     ExponentialPipe,
-    HighlightDirective
+    HighlightDirective,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
