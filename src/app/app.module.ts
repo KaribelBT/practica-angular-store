@@ -4,14 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { ProductComponent } from './components/product.component';
 import { CartComponent } from './cart/cart.component';
-import { ProductsComponent } from './products/products.component';
 import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 
 import { ExponentialPipe } from './exponential.pipe';
@@ -22,14 +19,11 @@ import { HighlightDirective } from './highlight.directive';
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProductComponent,
     CartComponent,
-    ProductsComponent,
     DemoComponent,
     PageNotFoundComponent,
     ExponentialPipe,
     HighlightDirective,
-    ProductDetailComponent,
     LayoutComponent,
     FooterComponent
   ],
@@ -41,4 +35,5 @@ import { HighlightDirective } from './highlight.directive';
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
