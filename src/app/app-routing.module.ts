@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProductDetailComponent } from './products/components/product-detail/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
@@ -35,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: 'demo',
-    component: DemoComponent
+    loadChildren: () => import('./demo/demo.module').then(m => m.DemoModule)
   },
   {
     path: '**',

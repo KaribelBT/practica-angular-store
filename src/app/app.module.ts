@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { CartComponent } from './cart/cart.component';
-import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,7 +19,6 @@ import { HighlightDirective } from './highlight.directive';
     AppComponent,
     HeaderComponent,
     CartComponent,
-    DemoComponent,
     PageNotFoundComponent,
     ExponentialPipe,
     HighlightDirective,
