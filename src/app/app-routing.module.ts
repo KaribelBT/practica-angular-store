@@ -5,29 +5,36 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component'
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/inicio',
-    pathMatch: 'full'
-  },
-  {
-    path: 'inicio',
-    component: HomeComponent
-  },
-  {
-    path: 'productos',
-    component: ProductsComponent
-  },
-  {
-    path: 'productos/:id',
-    component: ProductDetailComponent
-  },
-  {
-    path: 'contacto',
-    component: ContactComponent
+    component: LayoutComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: '/inicio',
+        pathMatch: 'full',
+      },
+      {
+        path: 'inicio',
+        component: HomeComponent
+      },
+      {
+        path: 'productos',
+        component: ProductsComponent
+      },
+      {
+        path: 'productos/:id',
+        component: ProductDetailComponent
+      },
+      {
+        path: 'contacto',
+        component: ContactComponent
+      }
+    ]
   },
   {
     path: 'demo',

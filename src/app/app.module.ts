@@ -12,11 +12,14 @@ import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+
 import { BannerComponent } from './banner/banner.component';
 
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
@@ -33,7 +36,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     BannerComponent,
     ExponentialPipe,
     HighlightDirective,
-    ProductDetailComponent
+    ProductDetailComponent,
+    LayoutComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
