@@ -10,22 +10,18 @@ import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 import { DemoComponent } from './demo/demo.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
-import { BannerComponent } from './banner/banner.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { LayoutComponent } from './layout/layout.component';
 
 import { ExponentialPipe } from './exponential.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     HeaderComponent,
     ProductComponent,
     CartComponent,
@@ -33,7 +29,6 @@ import { LayoutComponent } from './layout/layout.component';
     ContactComponent,
     DemoComponent,
     PageNotFoundComponent,
-    BannerComponent,
     ExponentialPipe,
     HighlightDirective,
     ProductDetailComponent,

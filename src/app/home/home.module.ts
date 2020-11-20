@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
-import { AngularMaterialModule } from '../angular-material/angular-material.module';
-import { BannerComponent } from '../banner/banner.component';
-
+import { BannerComponent } from './components/banner/banner.component';
+import { HomeComponent } from './components/home/home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +11,8 @@ import { BannerComponent } from '../banner/banner.component';
   ],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    HomeRoutingModule
   ]
 })
+
 export class HomeModule { }
